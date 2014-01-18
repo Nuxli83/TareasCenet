@@ -11,9 +11,11 @@ function accesoBD()
 
 function RegistraTareas(Txt_Tarea,SN_Tarea)
 {
+	alert();
 		accesoBD().transaction(function populateDB(tx) {
     tx.executeSql('CREATE TABLE IF NOT EXISTS Cat_Tarea (id unique,Txt_Tarea,SN_Tarea)');
     tx.executeSql('INSERT INTO Cat_Tarea (Txt_Tarea,SN_Tarea) VALUES ( "'+Txt_Tarea+'","'+SN_Tarea+'")');
+		
 		
 },
 
