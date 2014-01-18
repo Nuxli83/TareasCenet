@@ -43,13 +43,11 @@ function LeerTareas()
 			
 			for(i=0;i<largo;i++)
 			{
-				var th = res.rows.item(i).th;
-				var pr = res.rows.item(i).pr;
-				var ha = res.rows.item(i).ha;
-				var di = res.rows.item(i).di;
+				var tarea = res.rows.item(i).Txt_Tarea;
 				
 				
-				tabla += '<tr><td>'+Txt_Tarea+'</td></tr>';
+				
+				tabla += '<tr><td>'+tarea+'</td></tr>';
 
 				
 			}
